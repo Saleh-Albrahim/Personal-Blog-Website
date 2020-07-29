@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    background-color: grey;
+    font-family: 'Roboto' !important;
+}
+
+.head-container{
+    background-color: lightgray;
+    display: flex;
+    margin: 10px;
+    border-radius: 30px;
+    justify-content: space-around;
+}
+
+.head-container > a{
+    margin: auto 0; 
+}
+
+.head-container > input[type="search"]{
+    padding:  5px 0;
+    margin: auto 0; 
+}
+
