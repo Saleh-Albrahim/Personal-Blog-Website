@@ -12,7 +12,7 @@ h1, h5 {
     display:grid;
     grid-template-areas: 
     "hd hd hd hd hd hd"
-    "main main main main main main"
+    "main main main main main side"
     "ft ft ft ft ft ft";
     margin: 20px;
     grid-gap:  20px 0;
@@ -25,6 +25,7 @@ h1, h5 {
     border-radius: 30px;
     justify-content: space-around;
     align-items: center;
+    box-shadow: 5px 5px 5px gray;
 }
 .header input{
     padding: 8px;
@@ -33,24 +34,25 @@ h1, h5 {
 .main{
     grid-area:main;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     background-color: #e2e2e2 ;
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     grid-gap: 20px 10px;
     border-radius: 30px;
 }
-.main .grid-item {
+.grid-card {
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     display: flex;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
     flex-direction: column;
+    box-shadow: 5px 5px 5px gray;
 }
 
-.grid-item >* {
-    margin: 10px;
+.grid-card >* {
+    margin: 7px 0;
 }
 
 .blog-type{
@@ -64,7 +66,7 @@ h1, h5 {
     font-weight: 900;
 }
 .blog-date{
-    color: lightgray;
+    color: gray;
 }
 
 
@@ -77,6 +79,34 @@ h1, h5 {
     border-radius: 30px;
     justify-content: center;
     align-content: center;
+    box-shadow: 5px 5px 5px gray;
 }
 
+
+/* In case of tablet users: */
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+    .main {
+        grid-template-columns: 1fr;
+        }
+        .header{
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+        }
+    
+}
+  /* In case of mobile users: */
+@media screen and (max-width: 700px){
+    .main {
+    grid-template-columns: 1fr;
+    }
+    .header{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+}
 
