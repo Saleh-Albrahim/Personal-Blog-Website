@@ -123,9 +123,14 @@ h1, h5 {
 
 /* In case of tablet users: */
 @media screen and (min-width: 701px) and (max-width: 1050px) {
-    .main {
-        grid-template-columns: 1fr;
-        }
+    .container{
+        display:grid;
+        grid-template-areas: 
+        "hd hd hd hd hd hd"
+        "main main main main main main"
+        "side side side side side side"
+        "ft ft ft ft ft ft";
+    }
         .header{
             justify-content: center;
             align-items: center;
@@ -136,8 +141,13 @@ h1, h5 {
 }
   /* In case of mobile users: */
 @media screen and (max-width: 700px){
-    .main {
-    grid-template-columns: 1fr;
+    .container{
+        display:grid;
+        grid-template-areas: 
+        "hd hd hd hd hd hd"
+        "main main main main main main"
+        "side side side side side side"
+        "ft ft ft ft ft ft";
     }
     .header{
         justify-content: center;
