@@ -1,0 +1,47 @@
+
+.side{
+    grid-area:side;
+    display: grid;
+    grid-template-areas: 
+    "about"
+    "archives"
+    "elsewhere";
+    background-color: #e2e2e2 ;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 30px; 
+    grid-gap: 10px 0;
+}
+
+.card-title{
+    font-style: italic;
+    font-weight: bold;
+}
+.side-link {
+    display: block;
+    margin-top: 5px;
+}
+
+.about-card {
+    grid-area:about;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 30px; 
+    padding: 20px;
+}
+
+.elsewhere-card {
+    grid-area:elsewhere;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 30px; 
+    padding: 20px;
+    
+}
+.archives-card{
+    grid-area:archives;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 30px; 
+    padding: 20px;
+}

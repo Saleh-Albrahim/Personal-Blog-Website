@@ -1,0 +1,13 @@
+.header{
+    grid-area:hd;
+    display: flex;
+    background-color: #e2e2e2 ;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 30px;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 5px 5px gray;
+}
+.header input{
+    padding: 8px;
+}
