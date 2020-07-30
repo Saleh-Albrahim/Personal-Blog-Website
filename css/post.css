@@ -15,7 +15,7 @@ h1, h5 {
     "main main main main main side"
     "ft ft ft ft ft ft";
     margin: 20px;
-    grid-gap:  20px 0;
+    grid-gap:  20px 20px;
 }
 .header{
     grid-area:hd;
@@ -33,32 +33,17 @@ h1, h5 {
 
 .main{
     grid-area:main;
-    display: grid;
-    grid-template-columns: 1fr;
-    background-color: #e2e2e2 ;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    grid-gap: 20px 10px;
-    border-radius: 30px;
-}
-.grid-card {
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
     display: flex;
     background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 30px;
+    padding: 15px;
     border-radius: 20px;
     flex-direction: column;
-    box-shadow: 5px 5px 5px gray;
 }
 
-.grid-card >* {
+.main >* {
     margin: 7px 0;
-}
-
-.blog-type{
-    color:#00BFFF	;
-    font-weight: 900;
-    font-size: 20px;
 }
 
 .blog-title{
@@ -67,6 +52,53 @@ h1, h5 {
 }
 .blog-date{
     color: gray;
+}
+
+.side{
+    grid-area:side;
+    display: grid;
+    grid-template-areas: 
+    "about"
+    "archives"
+    "elsewhere";
+    background-color: #e2e2e2 ;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 30px; 
+    grid-gap: 10px 0;
+}
+
+.card-title{
+    font-style: italic;
+    font-weight: bold;
+}
+.side-link {
+    display: block;
+    margin-top: 5px;
+}
+
+.about-card {
+    grid-area:about;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 30px; 
+    padding: 20px;
+}
+
+.elsewhere-card {
+    grid-area:elsewhere;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 30px; 
+    padding: 20px;
+    
+}
+.archives-card{
+    grid-area:archives;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 30px; 
+    padding: 20px;
 }
 
 
@@ -80,6 +112,12 @@ h1, h5 {
     justify-content: center;
     align-content: center;
     box-shadow: 5px 5px 5px gray;
+}
+
+.blog-button{
+   margin: 5px;
+   font-size: 20px;
+   box-shadow: 5px 5px 5px gray;
 }
 
 
